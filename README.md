@@ -20,7 +20,6 @@ This project is based on [mmaction2](https://github.com/open-mmlab/mmaction2), w
 ## Introduction
 
 Compared to the original mmaction2, this project mainly adds relevant code in `./data` folder.
-
 1. data (folder): The datasets and core code are stored in this folder.
 2. data/hmdb51 (folder): The HMDB51 dataset is stored in this folder.
 3. data/ucf101 (folder): The UCF101 dataset is stored in this folder.
@@ -54,14 +53,12 @@ python data/audit.py
 
 
 The audit process for stolen dataset is as follows:
-
 1. Generate modified samples following Example 2;
 2. Calculate the probability difference between modified samples and original samples following Example 3. Based on these results, select the reference set and modified set. Then, construct the training set text (which can be obtained by modifying `./data/{dataset_name}/label_path/dataset1_train0.txt`) and update the corresponding training set path (i.e., `ann_file_train`) in the configuration file (see `./configs/reconginiton/{model_path}/{model_config}.py`);
 3. Train the suspect model following Example 3;
 4. Complete the dataset auditing following Example 4.
 
 The audit process for non-stolen datasets is as follows:
-
 1. Ensure the non-stolen dataset is stored in the relevant path;
 2. Construct the text for the non-stolen dataset (by modifying `./data/{dataset_name}/label_path/dataset1_train0.txt`) and modify the training set path (i.e., `ann_file_train`) in the configuration file (see `./configs/reconginiton/{model_path}/{model_config}.py`);
 3. Train the suspect model following Example 3;
