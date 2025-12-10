@@ -34,7 +34,7 @@ Compared to the original mmaction2, this project mainly adds relevant code in `.
 
 ## Running
 
-The users can download the HMDB51 and UCF101 datasets from the Internet, and the video files should be put into `./data/hmdb51/videos/` or `./data/ucf101/videos/` or `./data/sthv2/videos/`. The training config file is in `configs/recongition/{model_name}` folder, and the path can be modified based on the actual requirements. The detailed guide can be found in the [readthedocs](https://mmaction2.readthedocs.io/en/latest/get_started/quick_run.html).
+The users can download the HMDB51, UCF101 and Something-something-v2 datasets from the Internet, and the video files should be put into `./data/{dataset_name}/videos/`. The training config file is in `configs/recongition/{model_name}` folder, and the path can be modified based on the actual requirements. The detailed guide can be found in the [readthedocs](https://mmaction2.readthedocs.io/en/latest/get_started/quick_run.html).
 
 
 ```
