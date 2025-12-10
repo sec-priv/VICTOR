@@ -56,15 +56,21 @@ python data/audit.py
 The audit process for stolen dataset is as follows:
 
 Step 1: Generate modified samples following Example 2;
-Step 2: Calculate the probability difference between modified samples and original samples following Example 3. Based on these results, select the reference set and modified set. Then, construct the training set text (which can be obtained by modifying `./data/{dataset_name}/label_path/dataset1_train0.txt`) and update the corresponding training set path (i.e., `ann_file_train`) in the configuration file (see `./configs/reconginiton/{model_path}/{model_config}.py`).
-Step 3: Train the suspect model following Example 3.
+
+Step 2: Calculate the probability difference between modified samples and original samples following Example 3. Based on these results, select the reference set and modified set. Then, construct the training set text (which can be obtained by modifying `./data/{dataset_name}/label_path/dataset1_train0.txt`) and update the corresponding training set path (i.e., `ann_file_train`) in the configuration file (see `./configs/reconginiton/{model_path}/{model_config}.py`);
+
+Step 3: Train the suspect model following Example 3;
+
 Step 4: Complete the dataset auditing following Example 4.
 
 The audit process for non-stolen datasets is as follows:
 
 Step 1: Ensure the non-stolen dataset is stored in the relevant path;
-Step 2: Construct the text for the non-stolen dataset (by modifying `./data/{dataset_name}/label_path/dataset1_train0.txt`) and modify the training set path (i.e., `ann_file_train`) in the configuration file (see `./configs/reconginiton/{model_path}/{model_config}.py`).
-Step 3: Train the suspect model following Example 3.
+
+Step 2: Construct the text for the non-stolen dataset (by modifying `./data/{dataset_name}/label_path/dataset1_train0.txt`) and modify the training set path (i.e., `ann_file_train`) in the configuration file (see `./configs/reconginiton/{model_path}/{model_config}.py`);
+
+Step 3: Train the suspect model following Example 3;
+
 Step 4: Complete the dataset auditing following Example 4.
 
 
